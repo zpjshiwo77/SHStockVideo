@@ -1,0 +1,111 @@
+/* ---------------------------------------- 默认css针对16:9标准比例屏幕微信----------------------------------------*/
+html,body,article{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	height: 100%!important;
+    width: 100%;
+	overflow: hidden;
+	-webkit-text-size-adjust:100%!important;
+}
+.none{
+	display: none;
+}
+.hide{
+	opacity: 0;
+}
+a{
+	cursor: pointer;
+}
+a, a:visited{
+	color: #fff;
+}
+section{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+}
+aside{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    z-index: 19;
+    background-color: rgba(0,0,0,0.85);
+}
+.full{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+img{
+	/* pointer-events: none; */
+}
+/* public end */
+
+#questionBox{
+	background: url(../images/q1/0.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#questionBox .qsBox{
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	width: 6.27rem;
+	height: 2.26rem;
+	margin-left: -3.14rem;
+}
+#questionBox .qsBox .btn{
+	float: left;
+	width: 50%;
+	height: 1rem;
+	margin-top: 0.8rem;
+}
+#qsBg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 7.5rem;
+	height: 15rem;
+	transform: translate(-50%, -50%);
+}
+#qsBg img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#myVideo{
+	object-fit: cover;
+    object-position: center center;
+}
+.start{
+	position: absolute;
+	bottom: 1.5rem;
+	left: 50%;
+	width: 	2rem;
+	height: 0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	background-color: #333;
+	border-radius: 0.1rem;
+	margin-left: -1rem;
+	z-index: 9;
+	color: #fff;
+}
+/* questionBox end */
+/*---------------------------------------- 15:9 ----------------------*/
+
+/*---------------------------------------- 16:9 ----------------------*/
+
+/*---------------------------------------- 18:9 ----------------------*/
