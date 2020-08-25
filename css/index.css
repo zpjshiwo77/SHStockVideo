@@ -50,11 +50,6 @@ img{
 }
 /* public end */
 
-#questionBox{
-	background: url(../images/q1/0.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-}
 #questionBox .qsBox{
 	position: absolute;
 	bottom: 1.5rem;
@@ -74,8 +69,10 @@ img{
 	top: 50%;
 	left: 50%;
 	width: 7.5rem;
-	height: 15rem;
+	height: 18rem;
 	transform: translate(-50%, -50%);
+	background: url(../images/q1/0.jpg) no-repeat;
+	background-size: 100%;
 }
 #qsBg img{
 	position: absolute;
@@ -86,8 +83,13 @@ img{
 	display: none;
 }
 #myVideo{
-	object-fit: cover;
-    object-position: center center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 7.5rem;
+	height: 18rem;
+	/* object-fit: cover;
+	object-position: center center; */
 }
 /*video默认全屏按钮*/
 video::-webkit-media-controls-fullscreen-button{ display: none !important; }
