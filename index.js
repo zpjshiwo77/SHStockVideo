@@ -6,8 +6,7 @@ var windowScale = window.innerWidth / 750;
 //----------------------------------------页面初始化----------------------------------------
 icom.init(init);//初始化
 icom.screenScrollUnable();//如果是一屏高度项目且在ios下，阻止屏幕默认滑动行为
-var iclass = icom.getQueryString("c");
-if(iclass) $("#myVideo").addClass(iclass);
+
 function init() {
 	requestAnimationFrame(function () {
 		if (os.screenProp < 0.54) articleBox.addClass("screen189");
@@ -49,6 +48,7 @@ function load_timer(per) {
 
 //----------------------------------------页面逻辑代码----------------------------------------
 var videoBox = $("#videoBox");
+var indexBox = $("#indexBox");
 var questionBox = $("#questionBox");
 var qsBg = $("#qsBg");
 
@@ -83,8 +83,12 @@ function eventInit() {
 	$(".btn").on("touchend", hideBtnAnime);
 
 	$(".start").on("click", function () {
-		$(this).hide();
+		indexBox.hide();
+		videoBox.show();
 		myVideo.play();
+		setTimeout(function(){
+			showQuestionBox();
+		},34650)
 	})
 }
 
